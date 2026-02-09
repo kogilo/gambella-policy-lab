@@ -30,13 +30,13 @@ export default function AProposPage() {
         <section className="panel-card p-6 sm:p-8 mb-8 sm:mb-10">
           <div className="flex flex-col sm:flex-row items-start gap-6">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-ink flex items-center justify-center shrink-0">
-              <span className="text-2xl sm:text-3xl font-bold text-white">PB</span>
+              <span className="text-2xl sm:text-3xl font-bold text-white">YN</span>
             </div>
             <div>
-              <h2 className="text-xl sm:text-2xl font-bold text-ink">Pierre-Baptiste Borges</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-ink">Your Name</h2>
               <div className="flex flex-wrap items-center gap-3 mt-2">
                 <a
-                  href="https://x.com/pierbapt"
+                  href="https://x.com/yourhandle"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm text-ink-3 hover:text-ink transition-colors"
@@ -44,16 +44,16 @@ export default function AProposPage() {
                   <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
-                  @pierbapt
+                  @yourhandle
                 </a>
                 <a
-                  href="mailto:pierrebaptiste.borges@gmail.com"
+                  href="mailto:hello@example.com"
                   className="inline-flex items-center gap-1.5 text-sm text-ink-3 hover:text-ink transition-colors"
                 >
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  pierrebaptiste.borges@gmail.com
+                  hello@example.com
                 </a>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function AProposPage() {
           </p>
           <div className="grid sm:grid-cols-2 gap-3">
             <a
-              href="mailto:pierrebaptiste.borges@gmail.com"
+              href="mailto:hello@example.com"
               className="group playful-dash p-4 flex items-center gap-3 hover:shadow-sm transition-shadow"
             >
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
@@ -151,11 +151,11 @@ export default function AProposPage() {
               </div>
               <div>
                 <div className="text-sm font-semibold text-ink group-hover:text-accent">Email</div>
-                <div className="text-xs text-ink-3">pierrebaptiste.borges@gmail.com</div>
+                <div className="text-xs text-ink-3">hello@example.com</div>
               </div>
             </a>
             <a
-              href="https://x.com/pierbapt"
+              href="https://x.com/yourhandle"
               target="_blank"
               rel="noopener noreferrer"
               className="group playful-dash p-4 flex items-center gap-3 hover:shadow-sm transition-shadow"
@@ -167,7 +167,7 @@ export default function AProposPage() {
               </div>
               <div>
                 <div className="text-sm font-semibold text-ink group-hover:text-accent">X (Twitter)</div>
-                <div className="text-xs text-ink-3">@pierbapt</div>
+                <div className="text-xs text-ink-3">@yourhandle</div>
               </div>
             </a>
           </div>
@@ -180,7 +180,7 @@ export default function AProposPage() {
             La d&eacute;mocratie fonctionne mieux quand les citoyens ont les outils pour comprendre ce qu&apos;on leur propose.
           </p>
           <p className="text-xs text-ink-4 mt-4">
-            Merci &agrave; Tom Godignon pour son aide dans la conception de la m&eacute;thode d&apos;analyse.
+            Adapt this section to credit your collaborators.
           </p>
         </section>
 

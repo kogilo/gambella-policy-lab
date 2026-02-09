@@ -39,8 +39,8 @@ export default function FAQPage() {
               <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
                 Ce projet est un laboratoire indépendant, sans affiliation politique ni financement partisan.
                 Il est porté par{' '}
-                <a href="https://x.com/pierbapt" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-accent transition-colors">
-                  Pierre-Baptiste Borges
+                <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-accent transition-colors">
+                  Your Name
                 </a>
                 {' '}dans une démarche citoyenne de transparence sur les programmes électoraux.
               </p>

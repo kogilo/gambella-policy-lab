@@ -12,12 +12,12 @@ export default function SiteFooter() {
         </div>
         <p className="text-xs text-ink-3 text-center leading-relaxed">
           Un projet de{' '}
-          <a href="https://x.com/pierbapt" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-accent transition-colors">
-            Pierre-Baptiste Borges
+          <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-accent transition-colors">
+            Your Name
           </a>
           {' '}&middot;{' '}
-          <a href="https://x.com/pierbapt" target="_blank" rel="noopener noreferrer" className="text-ink-3 hover:text-accent transition-colors">
-            @pierbapt
+          <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" className="text-ink-3 hover:text-accent transition-colors">
+            @yourhandle
           </a>
         </p>
         <p className="text-xs text-ink-4 text-center mt-2">
