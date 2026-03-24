@@ -47,24 +47,31 @@ export default function ZoneBreakdownChart() {
   
 
   const options = {
-    responsive: true,
-    maintainAspectRatio: false,
-   plugins: {
-  legend: {
-    position: 'top',
-    labels: {
-      color: '#334155', // slate-700
-      font: {
-        weight: 'bold',
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    legend: {
+      position: 'top' as const,
+      labels: {
+        color: '#334155',
+        font: {
+          weight: 'bold' as const,
+        },
+      },
+    },
+    title: {
+      display: true,
+      text: `${zoneOptions.find((z) => z.key === selectedZone)?.label} Population Breakdown`,
+    },
+    tooltip: {
+      callbacks: {
+        label: function (context: any) {
+          return `${context.dataset.label}: ${Number(context.raw).toLocaleString()}`
+        },
       },
     },
   },
-  title: {
-    display: true,
-    text: `${zoneOptions.find((z) => z.key === selectedZone)?.label} Population Breakdown`,
-  },
-},
-  }
+}
 
   return (
     <div>
