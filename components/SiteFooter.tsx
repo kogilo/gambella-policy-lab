@@ -2,27 +2,86 @@ import Link from 'next/link'
 
 export default function SiteFooter() {
   return (
-    <footer className="pt-8 sm:pt-10 pb-6 sm:pb-8 border-t border-[var(--border)]">
-      <div className="max-w-5xl mx-auto px-5 sm:px-8">
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-5 mb-4 sm:mb-5">
-          <Link href="/methodologie" className="text-xs text-ink-3 hover:text-ink transition-colors">Méthodologie</Link>
-          <Link href="/comparateur" className="text-xs text-ink-3 hover:text-ink transition-colors">Comparateur</Link>
-          <Link href="/faq" className="text-xs text-ink-3 hover:text-ink transition-colors">FAQ</Link>
-          <Link href="/a-propos" className="text-xs text-ink-3 hover:text-ink transition-colors">À propos</Link>
+    <footer className="border-t border-slate-200 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <div className="grid gap-8 md:grid-cols-3">
+          
+          {/* Brand */}
+          <div>
+            <div className="text-lg font-bold text-green-800">
+              Gambella Policy Lab
+            </div>
+            <p className="mt-2 text-sm text-slate-600 leading-relaxed">
+              A civic platform for governance analysis, public policy, and regional development insight
+              focused on Gambella, Ethiopia.
+            </p>
+          </div>
+
+          {/* Navigation */}
+          <div>
+            <div className="text-sm font-semibold text-slate-800 mb-3">
+              Explore
+            </div>
+            <div className="flex flex-col gap-2 text-sm">
+              <Link href="/#profiles" className="text-slate-600 hover:text-slate-900 transition">
+                Profiles
+              </Link>
+              <Link href="/#scorecard" className="text-slate-600 hover:text-slate-900 transition">
+                Scorecard
+              </Link>
+              <Link href="/comparateur" className="text-slate-600 hover:text-slate-900 transition">
+                Comparator
+              </Link>
+              <Link href="/methodologie" className="text-slate-600 hover:text-slate-900 transition">
+                Methodology
+              </Link>
+              <Link href="/faq" className="text-slate-600 hover:text-slate-900 transition">
+                FAQ
+              </Link>
+            </div>
+          </div>
+
+          {/* About */}
+          <div>
+            <div className="text-sm font-semibold text-slate-800 mb-3">
+              About
+            </div>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              This is an independent civic initiative providing structured analysis of governance,
+              policy priorities, and public-service delivery using publicly available information.
+            </p>
+
+            <p className="mt-4 text-sm text-slate-500">
+              Created by <span className="font-medium text-slate-700">Abella Othow</span>
+            </p>
+          </div>
         </div>
-        <p className="text-xs text-ink-3 text-center leading-relaxed">
-          Un projet de{' '}
-          <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-accent transition-colors">
-            Your Name
-          </a>
-          {' '}&middot;{' '}
-          <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" className="text-ink-3 hover:text-accent transition-colors">
-            @yourhandle
-          </a>
-        </p>
-        <p className="text-xs text-ink-4 text-center mt-2">
-          Labo indépendant sans affiliation politique. Analyse IA appliquée à des sources publiques.
-        </p>
+
+        <div className="mt-10 border-t border-slate-200 pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-slate-500">
+          <div>
+            © 2026 Gambella Policy Lab
+          </div>
+
+          <div className="flex gap-4">
+            <a
+              href="https://www.linkedin.com/in/abulla-othuw/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-slate-900 transition"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/kogilo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-slate-900 transition"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   )

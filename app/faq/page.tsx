@@ -5,181 +5,174 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'FAQ',
-  description: 'Questions fréquentes sur l\'analyse IA des programmes des candidats à la mairie de Paris 2026. Méthode, limites et transparence.',
+  description:
+    'Frequently asked questions about Gambella Policy Lab, its methodology, scoring system, and limitations.',
   openGraph: {
-    title: 'FAQ — Paris 2026 Labo IA',
-    description: 'Questions fréquentes sur l\'analyse IA des programmes des candidats à la mairie de Paris 2026.',
+    title: 'FAQ — Gambella Policy Lab',
+    description:
+      'Frequently asked questions about governance analysis, scoring, and methodology used in the platform.',
   },
 }
 
 export default function FAQPage() {
   return (
-    <div className="site-shell min-h-screen">
+    <div className="min-h-screen bg-slate-50 text-slate-900">
       <SiteNav />
 
-      <header className="border-b border-[var(--border)]">
+      {/* Header */}
+      <header className="border-b border-slate-200 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-4xl mx-auto px-5 sm:px-8 py-10 sm:py-14">
-          <span className="kicker mb-3">FAQ</span>
-          <h1 className="text-2xl sm:text-4xl font-bold text-ink mt-1">Questions fréquentes</h1>
-          <p className="text-sm sm:text-base text-ink-3 mt-2">
-            Tout ce que vous devez savoir sur le projet, la méthode et les limites.
+          <span className="text-xs font-semibold uppercase tracking-wide text-green-700">
+            FAQ
+          </span>
+          <h1 className="text-2xl sm:text-4xl font-bold mt-2">
+            Frequently Asked Questions
+          </h1>
+          <p className="text-sm sm:text-base text-slate-600 mt-2">
+            Everything you need to know about the platform, methodology, and limitations.
           </p>
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-5 sm:px-8 py-8 sm:py-12">
-        <div className="space-y-3">
+      {/* Content */}
+      <main className="max-w-4xl mx-auto px-5 sm:px-8 py-8 sm:py-12 space-y-3">
 
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">Qui est derrière ce projet ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Ce projet est un laboratoire indépendant, sans affiliation politique ni financement partisan.
-                Il est porté par{' '}
-                <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" className="font-semibold text-ink hover:text-accent transition-colors">
-                  Your Name
-                </a>
-                {' '}dans une démarche citoyenne de transparence sur les programmes électoraux.
-              </p>
-            </div>
-          </details>
+        {/* Q1 */}
+        <details className="group rounded-2xl border border-slate-200 bg-white overflow-hidden">
+          <summary className="p-5 sm:p-6 cursor-pointer flex items-start gap-3 hover:bg-slate-50 transition">
+            <span className="font-bold text-green-700 mt-0.5">▶</span>
+            <span className="font-semibold">Who created this platform?</span>
+          </summary>
+          <div className="px-6 pb-6 text-sm text-slate-600">
+            This platform is an independent civic initiative created by{' '}
+            <span className="font-semibold">Abulla</span>. It is not affiliated with any political
+            organization or government institution.
+          </div>
+        </details>
 
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">Quel modèle d&apos;IA est utilisé ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                L&apos;analyse est réalisée par un agent d&apos;analyse politique non-partisan basé sur{' '}
-                <span className="font-semibold text-ink">Anthropic Claude Opus 4.6</span>,
-                conçu pour évaluer les programmes selon 5 critères objectifs et identiques pour tous les candidats.
-                Le modèle n&apos;a pas accès aux sondages ni aux préférences politiques.
-              </p>
-            </div>
-          </details>
+        {/* Q2 */}
+        <details className="group rounded-2xl border border-slate-200 bg-white overflow-hidden">
+          <summary className="p-5 sm:p-6 cursor-pointer flex items-start gap-3 hover:bg-slate-50 transition">
+            <span className="font-bold text-green-700 mt-0.5">▶</span>
+            <span className="font-semibold">What is the purpose of this platform?</span>
+          </summary>
+          <div className="px-6 pb-6 text-sm text-slate-600">
+            The goal is to provide a structured and transparent way to analyze governance profiles,
+            policy priorities, and public-service performance in Gambella. It helps users compare
+            different approaches using consistent criteria.
+          </div>
+        </details>
 
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">Les candidats ont-ils été consultés ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Non. L&apos;analyse porte exclusivement sur les programmes publiés publiquement. Aucun candidat n&apos;a été consulté, contacté ou impliqué dans le processus d&apos;évaluation.
-              </p>
-            </div>
-          </details>
-
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">Comment les scores sont-ils calculés ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed mb-4">
-                Chaque programme est évalué sur 5 critères (cohérence, solidité, robustesse, pragmatisme, détail), chacun noté sur 10. La note globale est la moyenne équipondérée de ces 5 notes.
-              </p>
+        {/* Q3 */}
+        <details className="group rounded-2xl border border-slate-200 bg-white overflow-hidden">
+          <summary className="p-5 sm:p-6 cursor-pointer flex items-start gap-3 hover:bg-slate-50 transition">
+            <span className="font-bold text-green-700 mt-0.5">▶</span>
+            <span className="font-semibold">How are the scores calculated?</span>
+          </summary>
+          <div className="px-6 pb-6 text-sm text-slate-600">
+            Each profile is evaluated across five criteria: coherence, institutional strength,
+            resilience, practicality, and level of detail. Each is scored out of 10, and the overall
+            score is the average of the five.
+            <div className="mt-4">
               <Link
                 href="/methodologie"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-ink text-white text-xs font-semibold hover:bg-ink-2 transition-colors"
+                className="inline-block px-4 py-2 rounded-lg bg-green-800 text-white text-xs font-semibold hover:bg-green-900 transition"
               >
-                Voir la méthodologie complète &rarr;
+                View full methodology →
               </Link>
             </div>
-          </details>
+          </div>
+        </details>
 
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">Pourquoi tel candidat a une note basse ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Une note basse reflète la qualité du programme écrit, pas la valeur du candidat. Un programme peut être stratégiquement vague, manquer de chiffrages, ou contenir des propositions hors compétence municipale. Le rapport PDF détaillé explique chaque note.
-              </p>
-            </div>
-          </details>
+        {/* Q4 */}
+        <details className="group rounded-2xl border border-slate-200 bg-white overflow-hidden">
+          <summary className="p-5 sm:p-6 cursor-pointer flex items-start gap-3 hover:bg-slate-50 transition">
+            <span className="font-bold text-green-700 mt-0.5">▶</span>
+            <span className="font-semibold">Does this platform support any political group?</span>
+          </summary>
+          <div className="px-6 pb-6 text-sm text-slate-600">
+            No. This is a neutral analytical tool. It does not endorse any candidate, group, or
+            institution. It is designed to support informed understanding, not political advocacy.
+          </div>
+        </details>
 
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">L&apos;IA peut-elle se tromper ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Oui. L&apos;IA évalue la qualité formelle et la cohérence des programmes, mais ne peut pas juger la sincérité des candidats ni anticiper le contexte politique futur. C&apos;est un outil de lecture, pas un oracle.
-              </p>
-            </div>
-          </details>
+        {/* Q5 */}
+        <details className="group rounded-2xl border border-slate-200 bg-white overflow-hidden">
+          <summary className="p-5 sm:p-6 cursor-pointer flex items-start gap-3 hover:bg-slate-50 transition">
+            <span className="font-bold text-green-700 mt-0.5">▶</span>
+            <span className="font-semibold">Can the analysis be wrong?</span>
+          </summary>
+          <div className="px-6 pb-6 text-sm text-slate-600">
+            Yes. The platform evaluates structure, clarity, and consistency of profiles. It cannot
+            predict future outcomes or political behavior. Users should treat it as a decision-support
+            tool, not a final authority.
+          </div>
+        </details>
 
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">Mes données sont-elles collectées ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Non. Le site ne collecte aucune donnée personnelle. Aucun cookie de tracking n&apos;est utilisé.
-              </p>
-            </div>
-          </details>
+        {/* Q6 */}
+        <details className="group rounded-2xl border border-slate-200 bg-white overflow-hidden">
+          <summary className="p-5 sm:p-6 cursor-pointer flex items-start gap-3 hover:bg-slate-50 transition">
+            <span className="font-bold text-green-700 mt-0.5">▶</span>
+            <span className="font-semibold">Where does the data come from?</span>
+          </summary>
+          <div className="px-6 pb-6 text-sm text-slate-600">
+            The platform uses publicly available information such as policy descriptions, governance
+            priorities, and structured profile data. No private or confidential data is used.
+          </div>
+        </details>
 
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">Puis-je télécharger les rapports ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Oui. Chaque page candidat propose un bouton &laquo;Rapport PDF&raquo; pour télécharger l&apos;analyse complète. Les rapports sont également accessibles depuis la page Méthodologie.
-              </p>
-            </div>
-          </details>
+        {/* Q7 */}
+        <details className="group rounded-2xl border border-slate-200 bg-white overflow-hidden">
+          <summary className="p-5 sm:p-6 cursor-pointer flex items-start gap-3 hover:bg-slate-50 transition">
+            <span className="font-bold text-green-700 mt-0.5">▶</span>
+            <span className="font-semibold">Is my data collected?</span>
+          </summary>
+          <div className="px-6 pb-6 text-sm text-slate-600">
+            No. The platform does not collect personal data or use tracking cookies.
+          </div>
+        </details>
 
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">À quelle fréquence le site est-il mis à jour ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Le site est mis à jour quand un candidat publie un programme significativement nouveau ou modifié. La dernière mise à jour date de février 2026.
-              </p>
-            </div>
-          </details>
+        {/* Q8 */}
+        <details className="group rounded-2xl border border-slate-200 bg-white overflow-hidden">
+          <summary className="p-5 sm:p-6 cursor-pointer flex items-start gap-3 hover:bg-slate-50 transition">
+            <span className="font-bold text-green-700 mt-0.5">▶</span>
+            <span className="font-semibold">How often is the platform updated?</span>
+          </summary>
+          <div className="px-6 pb-6 text-sm text-slate-600">
+            Updates occur when new information becomes available or when profiles are significantly
+            revised. The platform evolves continuously.
+          </div>
+        </details>
 
-          <details className="group panel-card overflow-hidden">
-            <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
-              <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">&#9654;</span>
-              <span className="text-sm sm:text-base font-semibold text-ink">Comment signaler une erreur ?</span>
-            </summary>
-            <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-              <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Si vous identifiez une erreur factuelle dans l&apos;analyse, vous pouvez nous contacter. Toute correction sera documentée et tracée dans un changelog public.
-              </p>
-            </div>
-          </details>
+        {/* Q9 */}
+        <details className="group rounded-2xl border border-slate-200 bg-white overflow-hidden">
+          <summary className="p-5 sm:p-6 cursor-pointer flex items-start gap-3 hover:bg-slate-50 transition">
+            <span className="font-bold text-green-700 mt-0.5">▶</span>
+            <span className="font-semibold">How can I report an issue?</span>
+          </summary>
+          <div className="px-6 pb-6 text-sm text-slate-600">
+            If you find an error or inconsistency, you can contact the project owner. Corrections can
+            be reviewed and incorporated into future updates.
+          </div>
+        </details>
 
-        </div>
-
-        <div className="panel-card p-5 sm:p-6 mt-8 text-center">
-          <p className="text-xs text-ink-3 mb-3">Vous ne trouvez pas votre réponse ?</p>
-          <div className="flex flex-wrap justify-center gap-3">
+        {/* Bottom */}
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center mt-8">
+          <p className="text-sm text-slate-600 mb-3">
+            Need more details?
+          </p>
+          <div className="flex justify-center gap-3 flex-wrap">
             <Link
               href="/methodologie"
-              className="px-5 py-2.5 rounded-lg border border-[var(--border)] text-xs font-semibold text-ink hover:shadow-sm transition-shadow"
+              className="px-5 py-2 rounded-lg border border-slate-200 text-sm font-semibold hover:bg-slate-50"
             >
-              Voir la méthodologie
+              Methodology
             </Link>
             <Link
-              href="/a-propos"
-              className="px-5 py-2.5 rounded-lg bg-ink text-white text-xs font-semibold hover:bg-ink-2 transition-colors"
+              href="/"
+              className="px-5 py-2 rounded-lg bg-green-800 text-white text-sm font-semibold hover:bg-green-900"
             >
-              Nous contacter
+              Back to dashboard
             </Link>
           </div>
         </div>

@@ -9,11 +9,11 @@ import SiteNav from '@/components/SiteNav'
 import SiteFooter from '@/components/SiteFooter'
 
 const criteriaLabels: { key: keyof Candidate['scores']; label: string }[] = [
-  { key: 'coherence', label: 'Cohérence' },
-  { key: 'solidite', label: 'Solidité' },
-  { key: 'robustesse', label: 'Robustesse' },
-  { key: 'pragmatisme', label: 'Pragmatisme' },
-  { key: 'detail', label: 'Détail' },
+  { key: 'coherence', label: 'Policy Coherence' },
+  { key: 'solidite', label: 'Institutional Strength' },
+  { key: 'robustesse', label: 'Resilience' },
+  { key: 'pragmatisme', label: 'Practicality' },
+  { key: 'detail', label: 'Level of Detail' },
 ]
 
 function getScoreHex(score: number): string {
@@ -23,13 +23,22 @@ function getScoreHex(score: number): string {
 }
 
 function getScoreLabel(score: number): string {
-  if (score >= 7) return 'Solide'
-  if (score >= 5) return 'Mitigé'
+  if (score >= 7) return 'Strong'
+  if (score >= 5) return 'Mixed'
   return 'Fragile'
 }
 
-function ComparisonBar({ scoreA, scoreB, label }: { scoreA: number; scoreB: number; label: string }) {
+function ComparisonBar({
+  scoreA,
+  scoreB,
+  label,
+}: {
+  scoreA: number
+  scoreB: number
+  label: string
+}) {
   const winner = scoreA > scoreB ? 'A' : scoreB > scoreA ? 'B' : 'tie'
+
   return (
     <div className="py-3 border-b border-[var(--border)] last:border-b-0">
       <div className="text-xs font-semibold text-ink-3 text-center mb-2">{label}</div>
@@ -45,22 +54,30 @@ function ComparisonBar({ scoreA, scoreB, label }: { scoreA: number; scoreB: numb
             <div className="score-bar w-16 sm:w-32">
               <div
                 className="score-bar-fill float-right"
-                style={{ width: `${(scoreA / 10) * 100}%`, backgroundColor: getScoreHex(scoreA) }}
+                style={{
+                  width: `${(scoreA / 10) * 100}%`,
+                  backgroundColor: getScoreHex(scoreA),
+                }}
               />
             </div>
           </div>
         </div>
+
         <div className="w-8 text-center">
-          {winner === 'A' && <span className="text-[10px] font-bold text-score-solid">&#9664;</span>}
-          {winner === 'B' && <span className="text-[10px] font-bold text-score-solid">&#9654;</span>}
+          {winner === 'A' && <span className="text-[10px] font-bold text-score-solid">◀</span>}
+          {winner === 'B' && <span className="text-[10px] font-bold text-score-solid">▶</span>}
           {winner === 'tie' && <span className="text-[10px] font-bold text-ink-4">=</span>}
         </div>
+
         <div className="flex-1">
           <div className="flex items-center gap-2">
             <div className="score-bar w-16 sm:w-32">
               <div
                 className="score-bar-fill"
-                style={{ width: `${(scoreB / 10) * 100}%`, backgroundColor: getScoreHex(scoreB) }}
+                style={{
+                  width: `${(scoreB / 10) * 100}%`,
+                  backgroundColor: getScoreHex(scoreB),
+                }}
               />
             </div>
             <span
@@ -76,7 +93,7 @@ function ComparisonBar({ scoreA, scoreB, label }: { scoreA: number; scoreB: numb
   )
 }
 
-export default function ComparateurPage() {
+export default function ComparatorPage() {
   const sorted = [...candidatesData].sort((a, b) => b.globalScore - a.globalScore)
   const [slugA, setSlugA] = useState(sorted[0]?.slug ?? '')
   const [slugB, setSlugB] = useState(sorted[1]?.slug ?? '')
@@ -84,12 +101,15 @@ export default function ComparateurPage() {
   const candidateA = candidatesData.find((c) => c.slug === slugA)
   const candidateB = candidatesData.find((c) => c.slug === slugB)
 
-  const winsA = candidateA && candidateB
-    ? criteriaLabels.filter((c) => candidateA.scores[c.key] > candidateB.scores[c.key]).length
-    : 0
-  const winsB = candidateA && candidateB
-    ? criteriaLabels.filter((c) => candidateB.scores[c.key] > candidateA.scores[c.key]).length
-    : 0
+  const winsA =
+    candidateA && candidateB
+      ? criteriaLabels.filter((c) => candidateA.scores[c.key] > candidateB.scores[c.key]).length
+      : 0
+
+  const winsB =
+    candidateA && candidateB
+      ? criteriaLabels.filter((c) => candidateB.scores[c.key] > candidateA.scores[c.key]).length
+      : 0
 
   return (
     <div className="site-shell min-h-screen">
@@ -97,10 +117,10 @@ export default function ComparateurPage() {
 
       <header className="border-b border-[var(--border)]">
         <div className="max-w-5xl mx-auto px-5 sm:px-8 py-10 sm:py-14">
-          <span className="kicker mb-3">Comparateur</span>
-          <h1 className="text-xl sm:text-4xl font-bold text-ink mt-1">Face-à-face</h1>
+          <span className="kicker mb-3">Comparator</span>
+          <h1 className="text-xl sm:text-4xl font-bold text-ink mt-1">Profile comparison</h1>
           <p className="text-sm sm:text-base text-ink-3 mt-2">
-            Comparez deux candidats critère par critère, thème par thème.
+            Compare two governance or policy profiles across criteria, themes, strengths, and weaknesses.
           </p>
         </div>
       </header>
@@ -108,7 +128,7 @@ export default function ComparateurPage() {
       <main className="max-w-5xl mx-auto px-5 sm:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-8">
           <div>
-            <label className="label-mono mb-2 block">Candidat A</label>
+            <label className="label-mono mb-2 block">Profile A</label>
             <select
               value={slugA}
               onChange={(e) => setSlugA(e.target.value)}
@@ -121,8 +141,9 @@ export default function ComparateurPage() {
               ))}
             </select>
           </div>
+
           <div>
-            <label className="label-mono mb-2 block">Candidat B</label>
+            <label className="label-mono mb-2 block">Profile B</label>
             <select
               value={slugB}
               onChange={(e) => setSlugB(e.target.value)}
@@ -141,7 +162,11 @@ export default function ComparateurPage() {
           <>
             <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-8">
               {[candidateA, candidateB].map((c) => (
-                <Link key={c.slug} href={`/candidats/${c.slug}`} className="group panel-card p-4 sm:p-5 hover:shadow-md transition-shadow">
+                <Link
+                  key={c.slug}
+                  href={`/candidats/${c.slug}`}
+                  className="group panel-card p-4 sm:p-5 hover:shadow-md transition-shadow"
+                >
                   <div className="flex items-center gap-3">
                     <div className="relative w-12 h-12 rounded-lg shrink-0 overflow-hidden">
                       <Image src={c.photo} alt={c.name} fill className="object-cover" sizes="48px" />
@@ -153,6 +178,7 @@ export default function ComparateurPage() {
                       <div className="text-[11px] text-ink-3">{c.party}</div>
                     </div>
                   </div>
+
                   <div className="flex items-center justify-between mt-4 pt-3 border-t border-[var(--border)]">
                     <span className="score-display text-3xl" style={{ color: getScoreHex(c.globalScore) }}>
                       {c.globalScore}
@@ -172,28 +198,34 @@ export default function ComparateurPage() {
                     {winsA}
                   </div>
                   <div className="text-[11px] text-ink-3">
-                    {winsA > 1 ? 'critères gagnés' : 'critère gagné'}
+                    {winsA > 1 ? 'criteria won' : 'criterion won'}
                   </div>
                 </div>
+
                 <div className="text-ink-4 text-lg font-bold">VS</div>
+
                 <div>
                   <div className="score-display text-2xl sm:text-3xl" style={{ color: getScoreHex(candidateB.globalScore) }}>
                     {winsB}
                   </div>
                   <div className="text-[11px] text-ink-3">
-                    {winsB > 1 ? 'critères gagnés' : 'critère gagné'}
+                    {winsB > 1 ? 'criteria won' : 'criterion won'}
                   </div>
                 </div>
               </div>
             </div>
 
             <section className="panel-card p-5 sm:p-7 mb-8">
-              <h2 className="text-lg sm:text-xl font-bold text-ink mb-1">Comparaison par critère</h2>
-              <p className="text-xs text-ink-3 mb-4">Chaque barre représente la note sur 10.</p>
+              <h2 className="text-lg sm:text-xl font-bold text-ink mb-1">Comparison by criterion</h2>
+              <p className="text-xs text-ink-3 mb-4">Each bar represents the score out of 10.</p>
 
               <div className="flex items-center justify-between mb-3 px-2">
-                <span className="text-xs font-semibold text-ink">{candidateA.name.split(' ').pop()}</span>
-                <span className="text-xs font-semibold text-ink">{candidateB.name.split(' ').pop()}</span>
+                <span className="text-xs font-semibold text-ink">
+                  {candidateA.name.split(' ').slice(-1)[0]}
+                </span>
+                <span className="text-xs font-semibold text-ink">
+                  {candidateB.name.split(' ').slice(-1)[0]}
+                </span>
               </div>
 
               {criteriaLabels.map((c) => (
@@ -206,18 +238,25 @@ export default function ComparateurPage() {
               ))}
 
               <div className="pt-3 mt-2 border-t-2 border-ink/10">
-                <ComparisonBar label="NOTE GLOBALE" scoreA={candidateA.globalScore} scoreB={candidateB.globalScore} />
+                <ComparisonBar
+                  label="OVERALL SCORE"
+                  scoreA={candidateA.globalScore}
+                  scoreB={candidateB.globalScore}
+                />
               </div>
             </section>
 
             {candidateA.thematicScores.length > 0 && candidateB.thematicScores.length > 0 && (
               <section className="panel-card p-5 sm:p-7 mb-8">
-                <h2 className="text-lg sm:text-xl font-bold text-ink mb-4">Scores thématiques</h2>
+                <h2 className="text-lg sm:text-xl font-bold text-ink mb-4">Thematic scores</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3">
                   {candidateA.thematicScores.map((themeA) => {
                     const themeB = candidateB.thematicScores.find((t) => t.theme === themeA.theme)
                     if (!themeB) return null
-                    const winner = themeA.score > themeB.score ? 'A' : themeB.score > themeA.score ? 'B' : 'tie'
+
+                    const winner =
+                      themeA.score > themeB.score ? 'A' : themeB.score > themeA.score ? 'B' : 'tie'
+
                     return (
                       <div key={themeA.theme} className="playful-dash p-3 text-center">
                         <div className="text-[11px] text-ink-3 font-medium mb-2">{themeA.theme}</div>
@@ -250,7 +289,7 @@ export default function ComparateurPage() {
                     <div className="relative w-7 h-7 rounded-md overflow-hidden">
                       <Image src={c.photo} alt={c.name} fill className="object-cover" sizes="28px" />
                     </div>
-                    <h3 className="text-sm font-bold text-ink">Points forts</h3>
+                    <h3 className="text-sm font-bold text-ink">Strengths</h3>
                   </div>
                   <ul className="space-y-2">
                     {c.strengths.slice(0, 4).map((s, i) => (
@@ -271,7 +310,7 @@ export default function ComparateurPage() {
                     <div className="relative w-7 h-7 rounded-md overflow-hidden">
                       <Image src={c.photo} alt={c.name} fill className="object-cover" sizes="28px" />
                     </div>
-                    <h3 className="text-sm font-bold text-ink">Points faibles</h3>
+                    <h3 className="text-sm font-bold text-ink">Weaknesses</h3>
                   </div>
                   <ul className="space-y-2">
                     {c.weaknesses.slice(0, 4).map((w, i) => (
@@ -292,7 +331,7 @@ export default function ComparateurPage() {
                     <div className="relative w-7 h-7 rounded-md overflow-hidden">
                       <Image src={c.photo} alt={c.name} fill className="object-cover" sizes="28px" />
                     </div>
-                    <h3 className="text-sm font-bold text-ink">Mesures phares</h3>
+                    <h3 className="text-sm font-bold text-ink">Priority measures</h3>
                   </div>
                   <div className="space-y-2">
                     {c.bestMeasures.slice(0, 3).map((m, i) => (

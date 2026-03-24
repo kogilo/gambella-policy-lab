@@ -1,519 +1,254 @@
 [
   {
-    "slug": "bournazel",
-    "name": "Pierre-Yves Bournazel",
-    "party": "Horizons / Renaissance",
-    "politicalColor": "#FF6F00",
-    "campaignUrl": "https://bournazel.paris/",
-    "politicalLine": "Député de Paris, soutenu par Horizons et Renaissance. Programme axé sur la sécurité, la gestion urbaine et la rénovation du parc immobilier.",
-    "globalScore": 7.7,
-    "photo": "/candidates/bournazel.jpg",
-    "scores": {
-      "coherence": 7.5,
-      "solidite": 8.0,
-      "robustesse": 7.0,
-      "pragmatisme": 7.5,
-      "detail": 8.5
-    },
-    "strengths": [
-      "Programme très structuré avec chiffrages, calendriers et exemples concrets pour chaque mesure",
-      "Vision cohérente d'une ville mieux gérée, avec un fil conducteur fort autour de la rationalisation",
-      "Approche pragmatique s'inspirant de ce qui fonctionne dans d'autres métropoles européennes (Londres, Stockholm)"
-    ],
-    "weaknesses": [
-      "Risques d'exécution : certaines mesures phares font face à des défis opérationnels majeurs",
-      "Dépendances législatives : nombreuses propositions nécessitent des évolutions législatives nationales",
-      "Optimisme budgétaire : certaines hypothèses financières paraissent ambitieuses"
-    ],
-    "problematicMeasures": [
-      "6 000 policiers municipaux en 6 ans : rythme de recrutement de 800-1 000/an irréaliste",
-      "Vente de 20 000 logements sociaux : valorisation très optimiste (150k €/unité = 3 Mds €)",
-      "Division de la dette par deux nécessite une discipline budgétaire exceptionnelle"
-    ],
-    "verdict": "Un programme gestionnaire cohérent et applicable, mais dont la réussite dépendra fortement de la capacité d'exécution et de négociation politique.",
-    "bestMeasures": [
-      {
-        "title": "Pack 100% garanties logement",
-        "detail": "Remettre 20 000 logements vides sur le marché avec un pack garanties à 200 €/an en moyenne",
-        "type": "realistic"
-      },
-      {
-        "title": "300 capteurs acoustiques Méduses",
-        "detail": "Lutte contre le bruit avec 300 capteurs + 50 radars anti-nuisances sonores dans tout Paris",
-        "type": "costed"
-      },
-      {
-        "title": "Métro de nuit",
-        "detail": "Comme à Londres et New York, ouverture nocturne du métro parisien",
-        "type": "out_of_scope"
-      },
-      {
-        "title": "Rénovation massive du parc immobilier",
-        "detail": "900 M€ pour la rénovation des logements sociaux + plan pour 90 000 passoires thermiques",
-        "type": "costed"
-      }
-    ],
-    "worstMeasures": [
-      {
-        "title": "6 000 policiers en 6 ans",
-        "detail": "Défi RH considérable : 800-1 000 recrutements/an alors que les capacités actuelles sont insuffisantes",
-        "type": "unrealistic"
-      },
-      {
-        "title": "Vente de 20 000 logements sociaux",
-        "detail": "Valorisation optimiste de 150k €/unité. Risque politique et impact sur la mixité sociale",
-        "type": "unlikely"
-      },
-      {
-        "title": "Privatisation totale de la propreté",
-        "detail": "Résistances syndicales prévisibles et complexité de la reprise du personnel",
-        "type": "unlikely"
-      }
-    ],
-    "thematicScores": [
-      { "theme": "Logement", "score": 7.5 },
-      { "theme": "Transport", "score": 7.0 },
-      { "theme": "Sécurité", "score": 8.0 },
-      { "theme": "Écologie", "score": 6.5 },
-      { "theme": "Budget", "score": 7.0 }
-    ],
-    "contradictions": [
-      "Privatisation massive (propreté) vs création de milliers de fonctionnaires (police)",
-      "Promesse de désendettement massif (-50%) tout en maintenant les investissements",
-      "Centralisation (police municipale unique) vs critique de l'hyper-centralisation actuelle"
-    ],
-    "blindSpots": [
-      "Culture : quasi-absence du sujet",
-      "Éducation : seulement la sécurité aux abords des écoles",
-      "Santé : aucune mention significative",
-      "Innovation/Numérique : approche limitée"
-    ]
-  },
-  {
-    "slug": "chikirou",
-    "name": "Sophia Chikirou",
-    "party": "La France Insoumise",
-    "politicalColor": "#CC2443",
-    "campaignUrl": "https://sophiapourparis.fr/",
-    "politicalLine": "Ancienne directrice de campagne LFI, députée de Paris. Programme axé sur le logement social, la démocratie participative et la transition écologique.",
+    "slug": "gambella-regional-government",
+    "name": "Gambella Regional Government",
+    "party": "Regional Administration",
+    "politicalColor": "#2E7D32",
+    "campaignUrl": "#",
+    "politicalLine": "Focus on governance capacity, service delivery, regional development, and institutional resilience.",
     "globalScore": 6.8,
-    "photo": "/candidates/chikirou.jpg",
+    "photo": "/candidates/gambella-government.png",
     "scores": {
-      "coherence": 8.5,
+      "coherence": 7.0,
       "solidite": 6.5,
-      "robustesse": 5.5,
-      "pragmatisme": 6.0,
-      "detail": 7.5
-    },
-    "strengths": [
-      "Vision systémique et cohérente articulant enjeux sociaux, écologiques et démocratiques",
-      "Ambition sociale remarquable : 80 000 logements, gel des loyers sociaux, zéro sans-abri",
-      "Démocratie participative approfondie : Maisons de quartier, RIC, budget participatif à 15%"
-    ],
-    "weaknesses": [
-      "Financement insuffisamment détaillé malgré des propositions de recettes nouvelles",
-      "Faisabilité juridique incertaine : mesures dépendant de compétences non municipales",
-      "Calendrier de mise en œuvre irréaliste pour l'accumulation de réformes structurelles"
-    ],
-    "problematicMeasures": [
-      "100 000 logements sociaux en 10 ans : doubler le rythme actuel de construction",
-      "Remunicipalisation complète de la propreté d'ici 2030 : contentieux juridiques probables",
-      "Zéro sans-abri avant fin du mandat : nécessite coopération de l'État"
-    ],
-    "verdict": "Un programme de rupture ambitieux et cohérent qui propose une transformation radicale de Paris en faveur des classes populaires, mais dont la faisabilité opérationnelle et financière reste à démontrer.",
-    "bestMeasures": [
-      {
-        "title": "Maisons de quartier cogérées",
-        "detail": "80 lieux polyvalents combinant services publics, activités sociales et gouvernance participative. Une par quartier.",
-        "type": "realistic"
-      },
-      {
-        "title": "Brigade du droit au logement",
-        "detail": "150 agents (juristes, médiateurs, inspecteurs) : 10 000 contrôles/an, 5 000 logements remis aux normes. Rentable : 15 M€ de coût pour 30-50 M€ de recettes.",
-        "type": "costed"
-      },
-      {
-        "title": "Budget participatif à 15%",
-        "detail": "Porter à 15% la part du budget d'investissement consacrée au budget participatif, contre environ 5% actuellement.",
-        "type": "realistic"
-      }
-    ],
-    "worstMeasures": [
-      {
-        "title": "100 000 logements sociaux en 10 ans",
-        "detail": "Nécessite plusieurs milliards d'euros non sourcés. Doubler le rythme actuel de construction est irréaliste.",
-        "type": "unrealistic"
-      },
-      {
-        "title": "Zéro sans-abri avant fin de mandat",
-        "detail": "Nécessite la coopération de l'État (hébergement d'urgence). Flux migratoires non maîtrisables par la Ville.",
-        "type": "out_of_scope"
-      },
-      {
-        "title": "Remunicipalisation totale de la propreté",
-        "detail": "Contentieux juridiques probables, coûts de transition très élevés, objectif 2030 sans plan de transition détaillé.",
-        "type": "unlikely"
-      }
-    ],
-    "thematicScores": [
-      { "theme": "Logement", "score": 8.0 },
-      { "theme": "Transport", "score": 6.5 },
-      { "theme": "Sécurité", "score": 6.0 },
-      { "theme": "Écologie", "score": 7.5 },
-      { "theme": "Budget", "score": 5.5 }
-    ],
-    "contradictions": [
-      "Densification (100 000 logements) vs création de 300 hectares d'espaces verts",
-      "Améliorer la ville risque d'accélérer la gentrification combattue",
-      "Multiplication des instances participatives peut ralentir les décisions et paralyser des projets"
-    ],
-    "blindSpots": [
-      "Développement économique : peu de mesures pour attirer/maintenir les entreprises",
-      "Classe moyenne : focus sur les plus modestes, peu pour les classes moyennes",
-      "Innovation/Numérique : secteur peu développé malgré son importance"
-    ]
-  },
-  {
-    "slug": "gregoire",
-    "name": "Emmanuel Grégoire",
-    "party": "PS / EELV / PCF",
-    "politicalColor": "#FF8080",
-    "campaignUrl": "https://emmanuel-gregoire-2026.fr/",
-    "politicalLine": "Premier adjoint d'Anne Hidalgo, tête de liste PS/EELV/PCF. Programme axé sur le logement, les services publics et la transformation écologique de Paris.",
-    "globalScore": 6.0,
-    "photo": "/candidates/gregoire.jpg",
-    "scores": {
-      "coherence": 8.0,
-      "solidite": 6.0,
-      "robustesse": 4.0,
-      "pragmatisme": 5.0,
+      "robustesse": 6.5,
+      "pragmatisme": 7.0,
       "detail": 7.0
     },
     "strengths": [
-      "Programme ambitieux et détaillé sur le logement social avec objectifs chiffrés (60 000 logements)",
-      "Vision écologique cohérente intégrant transformation urbaine et justice sociale",
-      "Propositions concrètes pour les services publics et la vie quotidienne (234 mesures au total)"
+      "Clear focus on public administration and local service delivery",
+      "Strong relevance to roads, schools, clinics, and agriculture",
+      "Useful framework for evaluating governance readiness and institutional capacity"
     ],
     "weaknesses": [
-      "Financement insuffisamment détaillé pour des projets très coûteux (périphérique, 300 ha de jardins)",
-      "Calendriers peu précis sur les grandes transformations urbaines",
-      "Faible prise en compte des contraintes juridiques et administratives"
+      "Execution depends heavily on administrative coordination",
+      "Financing assumptions may remain uncertain without budget transparency",
+      "Some policy areas need more detailed implementation timelines"
     ],
     "problematicMeasures": [
-      "Transformation du périphérique en boulevard urbain : coût estimé 5-8 Mds €, 10-15 ans minimum",
-      "300 hectares de nouveaux jardins : physiquement impossible (équivaut à 3 Bois de Boulogne)",
-      "Métros 24h/24 : compétence exclusive IDFM/Région, coût d'exploitation énorme"
+      "Rapid institutional reform without trained personnel may slow implementation",
+      "Large infrastructure ambitions may exceed current fiscal capacity",
+      "Service delivery targets require stronger monitoring systems"
     ],
-    "verdict": "Un programme progressiste et ambitieux, bien structuré sur le plan social, mais manquant de robustesse budgétaire et de pragmatisme sur les grandes transformations urbaines.",
+    "verdict": "A practical governance-focused profile that is better suited for a civic-policy platform than an election campaign profile.",
     "bestMeasures": [
       {
-        "title": "60 000 logements sociaux",
-        "detail": "Arsenal complet anti-spéculation : taxation vacance, réquisition, interdiction Airbnb. Brigade de protection du logement.",
+        "title": "Local Service Delivery Dashboard",
+        "detail": "Track progress on schools, clinics, roads, water access, and administrative performance.",
         "type": "realistic"
       },
       {
-        "title": "15 lignes de bus express",
-        "detail": "Super-priorité aux carrefours, vidéoverbalisation des voies bus, bus toutes les 5 minutes en heure de pointe.",
-        "type": "realistic"
-      },
-      {
-        "title": "Garantie Municipale des Loyers",
-        "detail": "Extension du dispositif Visale avec une assurance habitation municipale innovante.",
-        "type": "best"
-      }
-    ],
-    "worstMeasures": [
-      {
-        "title": "Transformation du périphérique",
-        "detail": "Coût : 5-8 milliards €. 35 km à transformer. Comparaison : Séoul (6 km) a mis 10 ans. Impossible en un mandat.",
-        "type": "unrealistic"
-      },
-      {
-        "title": "300 hectares de jardins",
-        "detail": "Paris compte 500 ha d'espaces verts. En créer 300 de plus (+60%) est physiquement impossible : foncier quasi-inexistant.",
-        "type": "unrealistic"
-      },
-      {
-        "title": "Coût total estimé : 25-35 milliards €",
-        "detail": "Budget annuel de Paris : 10 Mds € dont 1,5 Md d'investissement. Aucun plan de financement présenté.",
-        "type": "worst"
-      }
-    ],
-    "thematicScores": [
-      { "theme": "Logement", "score": 8.0 },
-      { "theme": "Transport", "score": 6.5 },
-      { "theme": "Sécurité", "score": 7.0 },
-      { "theme": "Écologie", "score": 7.5 },
-      { "theme": "Budget", "score": 3.0 }
-    ],
-    "contradictions": [
-      "60 000 logements (densification) vs 300 ha de jardins (espace nécessaire)",
-      "1 000 rues piétonnes vs maintien de l'accessibilité pour professionnels",
-      "Nombreuses gratuités proposées sans aucune mention de hausse d'impôts"
-    ],
-    "blindSpots": [
-      "Financement global : pas de budget prévisionnel ni impact dette",
-      "Gouvernance intercommunale : projets nécessitant accord Métropole/Région",
-      "Impact économique : effet sur l'attractivité non traité"
-    ]
-  },
-  {
-    "slug": "dati",
-    "name": "Rachida Dati",
-    "party": "LR / MoDem / UDI",
-    "politicalColor": "#0066CC",
-    "campaignUrl": "https://rachidadati2026.com/",
-    "politicalLine": "Maire du 7e arrondissement, investie par LR/MoDem/UDI. Programme axé sur la sécurité, les familles et la rupture avec la gestion municipale actuelle.",
-    "globalScore": 3.6,
-    "photo": "/candidates/dati.jpg",
-    "scores": {
-      "coherence": 4.0,
-      "solidite": 4.0,
-      "robustesse": 2.0,
-      "pragmatisme": 5.0,
-      "detail": 3.0
-    },
-    "strengths": [
-      "Sécurité : propositions concrètes avec chiffrage (5 000 policiers municipaux, 8 000 caméras)",
-      "Famille : volet le plus détaillé avec 9 mesures concrètes (crèches, écoles, handicap)",
-      "Expérience : connaissance du terrain (maire du 7e depuis 2008) et des rouages administratifs"
-    ],
-    "weaknesses": [
-      "Absence quasi-totale de chiffrage budgétaire : aucune estimation du coût global",
-      "Angles morts majeurs : silence sur culture, économie, environnement, social, santé",
-      "Contradictions entre promesses de dépenses massives et volonté de « redresser les finances »"
-    ],
-    "problematicMeasures": [
-      "5 000 policiers municipaux : multiplication par 10, coût estimé 250-300 M€/an non budgété",
-      "« Paris propre 24h/24, 7j/7 » : slogan sans plan opérationnel ni moyens identifiés",
-      "Redresser les finances tout en investissant massivement : équation budgétaire impossible"
-    ],
-    "verdict": "Un programme centré sur la sécurité et les familles qui peine à proposer une vision globale et cohérente pour une métropole de 2,2 millions d'habitants.",
-    "bestMeasures": [
-      {
-        "title": "9 mesures concrètes pour les familles",
-        "detail": "100% places en crèche pourvues, prêt à taux zéro pour les familles, semaine de 4 jours, études dirigées, formation AESH.",
-        "type": "realistic"
-      },
-      {
-        "title": "100 M€/an logement social",
-        "detail": "Engagement chiffré de 100 millions d'euros par an pour la rénovation du logement social.",
+        "title": "Agriculture and Food Security Plan",
+        "detail": "Prioritize irrigation, extension services, storage, and market access for local producers.",
         "type": "costed"
       },
       {
-        "title": "Sécurité détaillée",
-        "detail": "Proposition la plus détaillée du programme : 5 000 policiers, 8 000 caméras, approche globale écoles/parcs/quartiers.",
-        "type": "best"
+        "title": "Public Administration Training",
+        "detail": "Build capacity for district and regional staff in budgeting, reporting, and planning.",
+        "type": "realistic"
       }
     ],
     "worstMeasures": [
       {
-        "title": "5 000 policiers municipaux",
-        "detail": "Multiplication par 10 des effectifs actuels. Coût estimé : 250-300 M€/an non budgété. Recrutement et formation irréalistes en 6 ans.",
+        "title": "Immediate large-scale reform",
+        "detail": "Major changes without sequencing, training, and budgeting would be difficult to sustain.",
         "type": "unrealistic"
       },
       {
-        "title": "Silence sur la culture",
-        "detail": "Absence totale de propositions culturelles malgré son poste de ministre de la Culture. Crédibilité entamée.",
-        "type": "worst"
+        "title": "Overpromising on infrastructure",
+        "detail": "Large public works announcements without financing and procurement planning create delivery risks.",
+        "type": "unlikely"
       },
       {
-        "title": "2,7% de logements sociaux dans le 7e",
-        "detail": "Contradiction flagrante : le 7e sous sa gestion a le taux le plus faible de Paris. Opposition active aux nouveaux programmes.",
+        "title": "Centralized implementation only",
+        "detail": "Ignoring district-level capacity can weaken real outcomes on the ground.",
         "type": "worst"
       }
     ],
     "thematicScores": [
-      { "theme": "Logement", "score": 4.0 },
-      { "theme": "Transport", "score": 4.0 },
-      { "theme": "Sécurité", "score": 7.0 },
-      { "theme": "Écologie", "score": 3.0 },
-      { "theme": "Budget", "score": 2.0 }
+      { "theme": "Governance", "score": 7.0 },
+      { "theme": "Education", "score": 6.0 },
+      { "theme": "Health", "score": 6.5 },
+      { "theme": "Agriculture", "score": 8.0 },
+      { "theme": "Infrastructure", "score": 6.5 }
     ],
     "contradictions": [
-      "« Ville apaisée » vs approche ultra-sécuritaire (5 000 policiers armés)",
-      "« Ville respirable » vs retour des voitures sur les quais",
-      "« Bien gérer » vs absence totale de chiffrage budgétaire",
-      "« Enfant du logement social » vs 2,7% de logement social dans son arrondissement"
+      "Ambitious development goals vs limited implementation capacity",
+      "Pressure for rapid visible results vs need for long-term institution building",
+      "Regional planning goals vs uneven district-level delivery"
     ],
     "blindSpots": [
-      "Culture : silence total malgré son ministère",
-      "Santé : pas de plan (sauf PMI)",
-      "Innovation/Économie : rien sur l'attractivité économique",
-      "Social : pas de propositions sur la pauvreté, les SDF",
-      "Environnement : aucun plan climat",
-      "Sport : rien sur les équipements post-JO"
+      "Digital governance systems remain underdeveloped",
+      "Need stronger youth employment strategy",
+      "Public budget communication should be more transparent"
     ]
   },
   {
-    "slug": "knafo",
-    "name": "Sarah Knafo",
-    "party": "Reconquête !",
-    "politicalColor": "#1A1A2E",
-    "campaignUrl": "https://sarahpourparis.fr/",
-    "politicalLine": "Eurodéputée Reconquête, conseillère d'Éric Zemmour. Programme axé sur la sécurité, la baisse des impôts locaux et la réduction des effectifs municipaux.",
-    "globalScore": 5.6,
-    "photo": "/candidates/knafo.jpg",
+    "slug": "education-and-youth",
+    "name": "Education and Youth Development",
+    "party": "Policy Priority",
+    "politicalColor": "#1565C0",
+    "campaignUrl": "#",
+    "politicalLine": "Focus on schools, skills, language access, teacher support, and youth opportunity.",
+    "globalScore": 6.4,
+    "photo": "/candidates/education-youth.png",
     "scores": {
-      "coherence": 4.0,
+      "coherence": 7.0,
       "solidite": 6.0,
       "robustesse": 6.0,
-      "pragmatisme": 5.0,
-      "detail": 7.0
+      "pragmatisme": 6.5,
+      "detail": 6.5
     },
     "strengths": [
-      "Chiffrages détaillés : plan d'économies de 9,4 milliards d'euros, 87 propositions concrètes",
-      "Solutions technologiques concrètes : IA pour la gestion des feux, maquette numérique de Paris",
-      "Mesures opérationnelles précises : nombre d'agents, places de crèche, processus détaillés"
+      "Directly tied to long-term human capital development",
+      "Supports both civic stability and economic mobility",
+      "Can be measured through attendance, completion, and training outcomes"
     ],
     "weaknesses": [
-      "Propositions hors compétences municipales : immigration, expulsions, politique du logement social",
-      "Contradictions budgétaires : baisse massive d'impôts tout en augmentant les dépenses sécuritaires",
-      "Faisabilité juridique douteuse : suppression encadrement des loyers, discrimination attribution logements"
+      "Requires sustained funding over multiple years",
+      "Teacher recruitment and retention remain difficult in underserved areas",
+      "Policy success depends on coordination between schools and local government"
     ],
     "problematicMeasures": [
-      "Division par 2 des effectifs municipaux : statut fonction publique, résistances syndicales",
-      "Couverture des voies sur berge : 10+ ans de travaux, milliards d'euros",
-      "8 000 policiers municipaux : coût prohibitif (150 M€/an minimum)"
+      "Expanding facilities without teacher support may reduce quality",
+      "Training programs without labor-market links may have limited impact",
+      "Short-term targets may ignore deeper literacy and retention challenges"
     ],
-    "verdict": "Programme ambitieux avec des propositions concrètes mais fragilisé par des promesses irréalistes et des mesures juridiquement contestables.",
+    "verdict": "A strong civic-policy area that should be central to the site because it connects governance, opportunity, and long-term regional resilience.",
     "bestMeasures": [
       {
-        "title": "Plan d'économies de 9,4 Mds €",
-        "detail": "Effort de chiffrage global inégalé avec un plan détaillé poste par poste des économies annoncées.",
-        "type": "costed"
-      },
-      {
-        "title": "IA pour les feux tricolores",
-        "detail": "Utilisation de l'intelligence artificielle pour optimiser la gestion des feux et fluidifier le trafic.",
+        "title": "Teacher Support Initiative",
+        "detail": "Improve recruitment, training, and retention of teachers across districts.",
         "type": "realistic"
       },
       {
-        "title": "87 propositions chiffrées",
-        "detail": "Programme très détaillé avec pourcentages, processus et chiffrages précis. Point fort du programme.",
+        "title": "Youth Skills Pipeline",
+        "detail": "Connect secondary education, technical training, and local employment needs.",
+        "type": "best"
+      },
+      {
+        "title": "School Infrastructure Tracker",
+        "detail": "Publicly track classrooms, sanitation, materials, and school access by district.",
         "type": "costed"
       }
     ],
     "worstMeasures": [
       {
-        "title": "Division par 2 des effectifs",
-        "detail": "Statut de la fonction publique, résistances syndicales massives. Irréalisable en 10 ans, encore moins en 6.",
-        "type": "unrealistic"
+        "title": "One-size-fits-all schooling reform",
+        "detail": "Uniform solutions may not fit local district realities.",
+        "type": "unlikely"
       },
       {
-        "title": "Couverture des voies sur berge",
-        "detail": "Travaux pharaoniques : 10+ ans de travaux, coût en milliards d'euros. Totalement irréaliste.",
-        "type": "unrealistic"
-      },
-      {
-        "title": "Équation budgétaire impossible",
-        "detail": "Économies 1,88 Md/an - Baisses impôts 1,5 Md/an - Nouvelles dépenses 300 M/an = déficit 300-500 M€/an.",
+        "title": "Construction-first approach",
+        "detail": "Buildings alone do not improve outcomes without staff, materials, and supervision.",
         "type": "worst"
+      },
+      {
+        "title": "Unfunded scholarship promises",
+        "detail": "Scholarship expansion without long-term budget support is not sustainable.",
+        "type": "unrealistic"
       }
     ],
     "thematicScores": [
-      { "theme": "Logement", "score": 5.0 },
-      { "theme": "Transport", "score": 6.0 },
-      { "theme": "Sécurité", "score": 6.5 },
-      { "theme": "Écologie", "score": 3.0 },
-      { "theme": "Budget", "score": 6.0 }
+      { "theme": "Access", "score": 6.5 },
+      { "theme": "Quality", "score": 6.0 },
+      { "theme": "Youth Skills", "score": 7.0 },
+      { "theme": "Equity", "score": 6.5 },
+      { "theme": "Delivery", "score": 6.0 }
     ],
     "contradictions": [
-      "Diviser les impôts par 2 tout en augmentant massivement les dépenses (8 000 policiers)",
-      "Supprimer l'encadrement des loyers « pour permettre de se loger » (risque hausse des prix)",
-      "Réduire les fonctionnaires de moitié + créer 3 000 postes police",
-      "Paris high-tech + retour mobilier urbain historique"
+      "Rapid enrollment growth vs shortage of trained teachers",
+      "High expectations for youth employment vs limited market opportunities",
+      "Policy ambition vs uneven implementation across districts"
     ],
     "blindSpots": [
-      "Transition écologique quasi-absente du programme",
-      "Vieillissement de la population : peu de mesures seniors",
-      "Culture : très peu développé malgré la richesse parisienne"
+      "Adult education and continuing education need more attention",
+      "Digital learning access is limited",
+      "Stronger data systems are needed for outcome tracking"
     ]
   },
   {
-    "slug": "mariani",
-    "name": "Thierry Mariani",
-    "party": "Rassemblement National",
-    "politicalColor": "#0D2B55",
-    "campaignUrl": "https://www.mariani-2026.fr/",
-    "politicalLine": "Eurodéputé Rassemblement National, ancien ministre. Programme axé sur la sécurité, la propreté urbaine et la réforme de l'attribution des logements sociaux.",
-    "globalScore": 3.7,
-    "photo": "/candidates/mariani.jpg",
+    "slug": "health-and-community-services",
+    "name": "Health and Community Services",
+    "party": "Policy Priority",
+    "politicalColor": "#C62828",
+    "campaignUrl": "#",
+    "politicalLine": "Focus on clinics, maternal health, local access, staffing, and public health coordination.",
+    "globalScore": 6.2,
+    "photo": "/candidates/health-community.png",
     "scores": {
-      "coherence": 4.0,
-      "solidite": 3.5,
-      "robustesse": 2.5,
-      "pragmatisme": 3.0,
-      "detail": 5.5
+      "coherence": 6.5,
+      "solidite": 6.0,
+      "robustesse": 6.0,
+      "pragmatisme": 6.5,
+      "detail": 6.0
     },
     "strengths": [
-      "Propositions concrètes et détaillées sur la sécurité : 8 350 agents, 15 000 caméras, 7 brigades",
-      "Quelques mesures précisément chiffrées : 310 M€ taxe foncière, 50 M€ fonds commerces",
-      "Programme intergénérationnel logement bien structuré en deux formules"
+      "High relevance to daily life and public trust",
+      "Can produce visible benefits through basic service improvements",
+      "Supports resilience in periods of stress and displacement"
     ],
     "weaknesses": [
-      "Absence quasi-totale de plan de financement : aucun budget global présenté",
-      "35% des propositions relèvent de l'État, non de la Ville : confusion des compétences",
-      "30% des mesures illégales ou anticonstitutionnelles (priorité nationale, discriminations)"
+      "Staffing shortages can reduce practical impact",
+      "Remote-area access remains difficult",
+      "Supply chain gaps can undermine service quality"
     ],
     "problematicMeasures": [
-      "« Priorité nationale » : 7 censures du Conseil constitutionnel, anticonstitutionnel",
-      "Déficit créé estimé à 960 M€/an, soit 5,76 milliards sur 6 ans",
-      "Recrutement de 5 000 policiers : vivier de 500 candidats/an, délai réaliste 15-20 ans"
+      "Building clinics without staffing and supply planning weakens outcomes",
+      "Overcentralized health planning may overlook district realities",
+      "Short-term emergency responses cannot replace long-term public health systems"
     ],
-    "verdict": "Un programme qui traduit des convictions politiques fortes mais qui, faute de rigueur budgétaire et juridique, s'apparente à une déclaration d'intentions nationales plutôt qu'à un projet municipal opérationnel.",
+    "verdict": "A necessary pillar of any Gambella civic-policy website, especially when evaluating public service delivery and resilience.",
     "bestMeasures": [
       {
-        "title": "7 brigades spécialisées",
-        "detail": "Organisation structurée : brigades anti-squat, transports, anti-campements, anti-drogue, circulation, BAR municipales, proximité.",
+        "title": "Primary Clinic Strengthening",
+        "detail": "Improve staffing, medicines, referral systems, and reporting for local clinics.",
         "type": "realistic"
       },
       {
-        "title": "Programme intergénérationnel logement",
-        "detail": "Structure claire en deux formules Loyer et Solidarité, avec suivi et médiation par des associations agréées.",
-        "type": "realistic"
-      },
-      {
-        "title": "RIP à 5% du corps électoral",
-        "detail": "Référendum d'initiative populaire à 75 000 signatures sur les compétences municipales.",
+        "title": "Maternal and Child Health Focus",
+        "detail": "Prioritize prenatal care, skilled delivery support, and community outreach.",
         "type": "best"
+      },
+      {
+        "title": "District Health Reporting",
+        "detail": "Publish simple district-level indicators on access, staffing, and service gaps.",
+        "type": "costed"
       }
     ],
     "worstMeasures": [
       {
-        "title": "30% de mesures illégales",
-        "detail": "Sur 150 mesures, 45 posent des problèmes juridiques majeurs : anticonstitutionnelles, contraires aux lois, hors compétences.",
+        "title": "Infrastructure-only approach",
+        "detail": "New buildings without staff and supplies will not improve care quality.",
         "type": "worst"
       },
       {
-        "title": "Déficit de 5,76 milliards sur 6 ans",
-        "detail": "Équation impossible : -360 M recettes/an + 600 M dépenses/an. Dette finale estimée à 15 Mds (contre 9 actuellement).",
-        "type": "worst"
+        "title": "Unsequenced expansion",
+        "detail": "Trying to scale too quickly can create uneven and fragile services.",
+        "type": "unlikely"
       },
       {
-        "title": "35% hors compétences municipales",
-        "detail": "Immigration, Code de la route, Éducation nationale, justice : un tiers du programme ne relève pas de la Ville de Paris.",
-        "type": "out_of_scope"
+        "title": "No monitoring system",
+        "detail": "Without reliable data, it becomes hard to evaluate performance or fix gaps.",
+        "type": "unrealistic"
       }
     ],
     "thematicScores": [
-      { "theme": "Logement", "score": 4.0 },
-      { "theme": "Transport", "score": 5.0 },
-      { "theme": "Sécurité", "score": 6.0 },
-      { "theme": "Écologie", "score": 1.5 },
-      { "theme": "Budget", "score": 2.0 }
+      { "theme": "Access", "score": 6.0 },
+      { "theme": "Staffing", "score": 5.5 },
+      { "theme": "Maternal Health", "score": 7.0 },
+      { "theme": "Community Outreach", "score": 6.5 },
+      { "theme": "System Capacity", "score": 6.0 }
     ],
     "contradictions": [
-      "Baisser les impôts (-310 M/an) + augmenter les dépenses (+600 M/an) + désendetter : mathématiquement impossible",
-      "Autonomie par arrondissement vs mesures ultra-centralisées (uniforme obligatoire, interdictions)",
-      "Moratoire logement social + vente 40 000 HLM + priorité nationale sur un parc qui se réduit",
-      "Planter 50 000 arbres mais retour de la voiture partout (90 km/h, 20 000 parkings)"
+      "Service expansion vs limited staffing pipeline",
+      "Emergency needs vs long-term system strengthening",
+      "Visible short-term gains vs slower institutional reform"
     ],
     "blindSpots": [
-      "Qualité de l'air et enjeux climatiques : zéro mention",
-      "Santé publique globale : focus unique sur la lutte anti-drogue",
-      "Impact sur le tourisme (12% du PIB parisien) et les entreprises",
-      "Fuite des populations discriminées et tensions avec l'État"
+      "Mental health and trauma support need more attention",
+      "Data transparency should improve",
+      "Transport access to referral care remains a challenge"
     ]
   }
 ]

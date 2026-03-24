@@ -16,27 +16,28 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL("https://example.com"),
   title: {
-    default: "Election Lab — AI-Powered Program Analysis",
-    template: "%s | Election Lab",
+    default: "Gambella Policy Lab",
+    template: "%s | Gambella Policy Lab",
   },
   description:
-    "Non-partisan AI analysis of political programs. Same criteria, same rigor, same transparency for every candidate. Scores, comparisons, and downloadable reports.",
+    "A civic and public-policy platform focused on governance, development, and local politics in Gambella.",
   keywords: [
-    "election analysis",
-    "AI",
-    "political programs",
-    "candidate comparison",
-    "program scoring",
-    "non-partisan",
-    "election lab",
+    "profile",
+    "leader",
+    "public policy",
+    "governance",
+    "regional priorities",
+    "policy comparison",
+    "assessmentn",
+    "evaluation framework",
   ],
   authors: [{ name: "Your Name" }],
   creator: "Your Name",
   publisher: "Election Lab",
   openGraph: {
-    title: "Election Lab — AI-Powered Program Analysis",
+    title: "Prepared Gambella",
     description:
-      "Non-partisan AI analysis of political programs. Same criteria, same rigor, same transparency for every candidate.",
+      "Policy, resilience, and governance platform",
     url: "https://example.com",
     siteName: "Election Lab",
     locale: "en_US",
@@ -99,10 +100,11 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="fr">
-      <body
-        className={`${manrope.variable} ${instrumentSerif.variable} min-h-screen antialiased`}
-      >
+   <html lang="en" suppressHydrationWarning>
+  <body
+    suppressHydrationWarning
+    className={`${manrope.variable} ${instrumentSerif.variable} min-h-screen antialiased`}
+  >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

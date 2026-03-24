@@ -1,6 +1,6 @@
 'use client'
 
-import { CandidateScores } from '@/types/candidate'
+import type { CandidateScores } from '@/types/candidate'
 
 interface ScoreRadarProps {
   scores: CandidateScores

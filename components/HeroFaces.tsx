@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import candidatesDataJson from '@/lib/candidatesData.json'
 
+// import candidatesData from "@/lib/CandidatesData.json"
+
 const candidates = candidatesDataJson.map((c) => ({
   name: c.name.split(' ').pop() ?? c.name,
   photo: c.photo,
