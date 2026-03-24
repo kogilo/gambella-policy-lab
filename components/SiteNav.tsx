@@ -14,6 +14,7 @@ const allLinks = [
   { href: '/#scorecard', label: 'Scorecard' },
   { href: '/comparateur', label: 'Comparator' },
   { href: '/methodologie', label: 'Methodology' },
+  { href: '/analysis', label: 'Analysis' },
   { href: '/faq', label: 'FAQ' },
 ]
 
