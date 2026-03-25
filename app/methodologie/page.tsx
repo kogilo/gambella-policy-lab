@@ -180,12 +180,12 @@ export default function MethodologyPage() {
                 color: '#2563EB',
               },
               {
-                step: '3',
-                title: 'Thematic scoring',
-                detail:
-                  'Profiles are also described by sector or theme, such as governance, education, health, agriculture, and infrastructure.',
-                color: '#D97706',
-              },
+  step: '3',
+  title: 'Thematic scoring',
+  detail:
+    'Profiles are also described by sector or theme, such as governance, security, education, health, agriculture, infrastructure, and public services.',
+  color: '#D97706',
+},
               {
                 step: '4',
                 title: 'Strengths and risks',
@@ -297,6 +297,16 @@ export default function MethodologyPage() {
                 theme: 'Education',
                 icon: '🎓',
                 points: ['School access', 'Teacher support', 'Learning quality', 'Youth development'],
+              },
+              {
+                theme: 'Security',
+                icon: '🛡',
+                points: [
+                  'Public safety coordination',
+                  'Camp-management oversight',
+                  'Host-community protection',
+                  'Crisis-response capacity',
+                ],
               },
               {
                 theme: 'Health',
@@ -424,6 +434,7 @@ export default function MethodologyPage() {
           <div className="space-y-3">
             {[
               'The platform evaluates structured profile content, not personal intentions or private decision-making.',
+              'Security, refugee management, and host-community protection are sensitive governance issues and should be interpreted through evidence-based analysis rather than broad generalization.',
               'Scores reflect the quality and clarity of the policy profile, not guaranteed real-world outcomes.',
               'Comparisons simplify complex governance realities and should be read as analytical aids, not final truths.',
               'Some categories may remain incomplete if public information is limited.',

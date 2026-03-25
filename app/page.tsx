@@ -88,6 +88,7 @@ const criteria = [
 
 const policyThemes = [
   'Governance',
+  'Security',
   'Education',
   'Health',
   'Agriculture',

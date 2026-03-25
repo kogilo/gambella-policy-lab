@@ -5,32 +5,32 @@
     "party": "Regional Administration",
     "politicalColor": "#2E7D32",
     "campaignUrl": "#",
-    "politicalLine": "Focus on governance capacity, service delivery, regional development, and institutional resilience.",
-    "globalScore": 6.8,
+    "politicalLine": "Focus on governance capacity, service delivery, security coordination, regional development, and institutional resilience.",
+    "globalScore": 6.6,
     "photo": "/candidates/gambella-government.png",
     "scores": {
       "coherence": 7.0,
-      "solidite": 6.5,
-      "robustesse": 6.5,
-      "pragmatisme": 7.0,
-      "detail": 7.0
+      "solidite": 6.2,
+      "robustesse": 6.0,
+      "pragmatisme": 6.8,
+      "detail": 6.8
     },
     "strengths": [
       "Clear focus on public administration and local service delivery",
-      "Strong relevance to roads, schools, clinics, and agriculture",
-      "Useful framework for evaluating governance readiness and institutional capacity"
+      "Useful framework for evaluating governance readiness and institutional capacity",
+      "Recognizes the need for stronger coordination in zones experiencing demographic and humanitarian pressure"
     ],
     "weaknesses": [
-      "Execution depends heavily on administrative coordination",
-      "Financing assumptions may remain uncertain without budget transparency",
-      "Some policy areas need more detailed implementation timelines"
+      "Security coordination remains weaker than other policy areas",
+      "Camp management and host-community concerns are not fully integrated",
+      "Execution depends heavily on administrative coordination and local capacity"
     ],
     "problematicMeasures": [
-      "Rapid institutional reform without trained personnel may slow implementation",
+      "Security planning remains underdeveloped in areas affected by high refugee inflow",
       "Large infrastructure ambitions may exceed current fiscal capacity",
-      "Service delivery targets require stronger monitoring systems"
+      "Camp management systems require stronger coordination with local administration and public safety institutions"
     ],
-    "verdict": "A practical governance-focused profile that is better suited for a civic-policy platform than an election campaign profile.",
+    "verdict": "A practical governance-focused profile that is useful for civic-policy analysis, but it shows important gaps in security coordination, camp management, and host-community protection.",
     "bestMeasures": [
       {
         "title": "Local Service Delivery Dashboard",
@@ -43,9 +43,9 @@
         "type": "costed"
       },
       {
-        "title": "Public Administration Training",
-        "detail": "Build capacity for district and regional staff in budgeting, reporting, and planning.",
-        "type": "realistic"
+        "title": "Security and Coordination Framework",
+        "detail": "Strengthen coordination between regional administration, local communities, camp management, and public-safety actors.",
+        "type": "best"
       }
     ],
     "worstMeasures": [
@@ -60,13 +60,14 @@
         "type": "unlikely"
       },
       {
-        "title": "Centralized implementation only",
-        "detail": "Ignoring district-level capacity can weaken real outcomes on the ground.",
+        "title": "Security without local coordination",
+        "detail": "Security initiatives that ignore host-community realities and camp management structures may fail in practice.",
         "type": "worst"
       }
     ],
     "thematicScores": [
       { "theme": "Governance", "score": 7.0 },
+      { "theme": "Security", "score": 5.0 },
       { "theme": "Education", "score": 6.0 },
       { "theme": "Health", "score": 6.5 },
       { "theme": "Agriculture", "score": 8.0 },
@@ -75,12 +76,12 @@
     "contradictions": [
       "Ambitious development goals vs limited implementation capacity",
       "Pressure for rapid visible results vs need for long-term institution building",
-      "Regional planning goals vs uneven district-level delivery"
+      "Humanitarian response expectations vs local security and administrative constraints"
     ],
     "blindSpots": [
-      "Digital governance systems remain underdeveloped",
+      "Limited long-term strategy for balancing humanitarian response with local security needs",
       "Need stronger youth employment strategy",
-      "Public budget communication should be more transparent"
+      "Insufficient treatment of host-community security concerns in high-pressure zones"
     ]
   },
   {
@@ -89,7 +90,7 @@
     "party": "Policy Priority",
     "politicalColor": "#1565C0",
     "campaignUrl": "#",
-    "politicalLine": "Focus on schools, skills, language access, teacher support, and youth opportunity.",
+    "politicalLine": "Focus on schools, skills, language access, teacher support, youth opportunity, and long-term civic stability.",
     "globalScore": 6.4,
     "photo": "/candidates/education-youth.png",
     "scores": {
@@ -107,14 +108,14 @@
     "weaknesses": [
       "Requires sustained funding over multiple years",
       "Teacher recruitment and retention remain difficult in underserved areas",
-      "Policy success depends on coordination between schools and local government"
+      "School continuity may be affected in insecure or high-pressure zones"
     ],
     "problematicMeasures": [
       "Expanding facilities without teacher support may reduce quality",
       "Training programs without labor-market links may have limited impact",
-      "Short-term targets may ignore deeper literacy and retention challenges"
+      "Short-term targets may ignore deeper literacy, retention, and school-security challenges"
     ],
-    "verdict": "A strong civic-policy area that should be central to the site because it connects governance, opportunity, and long-term regional resilience.",
+    "verdict": "A strong civic-policy area that should remain central to the platform because it connects governance, opportunity, and long-term regional resilience, but it needs stronger treatment of security-related disruptions.",
     "bestMeasures": [
       {
         "title": "Teacher Support Initiative",
@@ -150,11 +151,12 @@
       }
     ],
     "thematicScores": [
-      { "theme": "Access", "score": 6.5 },
-      { "theme": "Quality", "score": 6.0 },
-      { "theme": "Youth Skills", "score": 7.0 },
-      { "theme": "Equity", "score": 6.5 },
-      { "theme": "Delivery", "score": 6.0 }
+      { "theme": "Governance", "score": 6.0 },
+      { "theme": "Security", "score": 4.8 },
+      { "theme": "Education", "score": 8.2 },
+      { "theme": "Health", "score": 5.5 },
+      { "theme": "Agriculture", "score": 4.8 },
+      { "theme": "Infrastructure", "score": 6.0 }
     ],
     "contradictions": [
       "Rapid enrollment growth vs shortage of trained teachers",
@@ -164,7 +166,7 @@
     "blindSpots": [
       "Adult education and continuing education need more attention",
       "Digital learning access is limited",
-      "Stronger data systems are needed for outcome tracking"
+      "Insufficient treatment of school disruption in areas under security pressure"
     ]
   },
   {
@@ -173,7 +175,7 @@
     "party": "Policy Priority",
     "politicalColor": "#C62828",
     "campaignUrl": "#",
-    "politicalLine": "Focus on clinics, maternal health, local access, staffing, and public health coordination.",
+    "politicalLine": "Focus on clinics, maternal health, local access, staffing, public health coordination, and community resilience.",
     "globalScore": 6.2,
     "photo": "/candidates/health-community.png",
     "scores": {
@@ -186,19 +188,19 @@
     "strengths": [
       "High relevance to daily life and public trust",
       "Can produce visible benefits through basic service improvements",
-      "Supports resilience in periods of stress and displacement"
+      "Supports resilience in periods of stress, displacement, and insecurity"
     ],
     "weaknesses": [
       "Staffing shortages can reduce practical impact",
       "Remote-area access remains difficult",
-      "Supply chain gaps can undermine service quality"
+      "Service pressure may intensify in zones affected by displacement and camp concentration"
     ],
     "problematicMeasures": [
       "Building clinics without staffing and supply planning weakens outcomes",
       "Overcentralized health planning may overlook district realities",
-      "Short-term emergency responses cannot replace long-term public health systems"
+      "Short-term emergency responses cannot replace long-term public health and crisis-response systems"
     ],
-    "verdict": "A necessary pillar of any Gambella civic-policy website, especially when evaluating public service delivery and resilience.",
+    "verdict": "A necessary pillar of any Gambella civic-policy platform, especially when evaluating public service delivery and resilience, but it needs stronger integration with security pressure and displacement realities.",
     "bestMeasures": [
       {
         "title": "Primary Clinic Strengthening",
@@ -234,11 +236,12 @@
       }
     ],
     "thematicScores": [
-      { "theme": "Access", "score": 6.0 },
-      { "theme": "Staffing", "score": 5.5 },
-      { "theme": "Maternal Health", "score": 7.0 },
-      { "theme": "Community Outreach", "score": 6.5 },
-      { "theme": "System Capacity", "score": 6.0 }
+      { "theme": "Governance", "score": 6.1 },
+      { "theme": "Security", "score": 5.0 },
+      { "theme": "Education", "score": 5.2 },
+      { "theme": "Health", "score": 8.1 },
+      { "theme": "Agriculture", "score": 4.5 },
+      { "theme": "Infrastructure", "score": 6.0 }
     ],
     "contradictions": [
       "Service expansion vs limited staffing pipeline",
@@ -248,7 +251,7 @@
     "blindSpots": [
       "Mental health and trauma support need more attention",
       "Data transparency should improve",
-      "Transport access to referral care remains a challenge"
+      "Transport access to referral care remains a challenge in crisis-affected areas"
     ]
   }
 ]
