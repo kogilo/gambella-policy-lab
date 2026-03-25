@@ -7,7 +7,6 @@ export interface CandidateScores {
 }
 
 export interface Candidate {
-  
   slug: string
   name: string
   party: string
@@ -20,7 +19,7 @@ export interface Candidate {
 
   strengths: string[]
   weaknesses: string[]
-  problematicMeasures?: string[]
+  problematicMeasures: string[]
 
   verdict: string
 
