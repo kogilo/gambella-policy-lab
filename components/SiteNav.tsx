@@ -4,9 +4,10 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+
 const primaryLinks = [
   { href: '/#profiles', label: 'Profiles' },
-  { href: '/#scorecard', label: 'Scorecard' },
+  { href: '/analysis', label: 'Analysis' },
 ]
 
 const allLinks = [
@@ -15,7 +16,9 @@ const allLinks = [
   { href: '/comparateur', label: 'Comparator' },
   { href: '/methodologie', label: 'Methodology' },
   { href: '/analysis', label: 'Analysis' },
+  { href: '/contact', label: 'Contact' },
   { href: '/faq', label: 'FAQ' },
+  { href: '/a-propos', label: 'About' },
 ]
 
 export default function SiteNav() {

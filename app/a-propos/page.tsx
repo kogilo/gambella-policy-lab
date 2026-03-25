@@ -34,10 +34,10 @@ export default function AboutPage() {
         <section className="panel-card p-6 sm:p-8 mb-8 sm:mb-10">
           <div className="flex flex-col sm:flex-row items-start gap-6">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-ink flex items-center justify-center shrink-0">
-              <span className="text-2xl sm:text-3xl font-bold text-white">AB</span>
+              <span className="text-2xl sm:text-3xl font-bold text-white">AO</span>
             </div>
             <div>
-              <h2 className="text-xl sm:text-2xl font-bold text-ink">Abulla</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-ink">Abella Othow</h2>
               <p className="text-sm text-ink-3 mt-2 max-w-xl">
                 Founder of Gambella Policy Lab. Background in international relations,
                 public service, and data-driven analysis, with a focus on governance,
@@ -46,18 +46,10 @@ export default function AboutPage() {
 
               <div className="flex flex-wrap items-center gap-3 mt-3">
                 <a
-                  href="https://x.com/yourhandle"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:getabullaothow@gmail.com"
                   className="text-sm text-ink-3 hover:text-ink transition"
                 >
-                  @yourhandle
-                </a>
-                <a
-                  href="mailto:hello@example.com"
-                  className="text-sm text-ink-3 hover:text-ink transition"
-                >
-                  hello@example.com
+                  getabullaothow@gmail.com
                 </a>
               </div>
             </div>
@@ -166,23 +158,15 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-sm text-ink-3 leading-relaxed mb-5">
-            For questions, feedback, or collaboration opportunities, feel free to
-            reach out.
+            For questions, feedback, or collaboration opportunities, feel free to reach out.
           </p>
 
           <div className="flex gap-4">
             <a
-              href="mailto:hello@example.com"
+              href="mailto:getabullaothow@gmail.com"
               className="text-sm text-accent hover:underline"
             >
-              Email
-            </a>
-            <a
-              href="https://x.com/yourhandle"
-              target="_blank"
-              className="text-sm text-accent hover:underline"
-            >
-              X (Twitter)
+              getabullaothow@gmail.com
             </a>
           </div>
         </section>

@@ -1,8 +1,10 @@
+import Link from 'next/link'
 import RefugeeTrendChart from '@/components/RefugeeTrendChart'
 import RefugeeMindMap from '@/components/RefugeeMindMap'
 import ZoneBreakdownChart from '@/components/ZoneBreakdownChart'
 import SiteNav from '@/components/SiteNav'
 import SiteFooter from '@/components/SiteFooter'
+import { analysisPosts } from '@/lib/analysisPosts'
 
 export default function AnalysisPage() {
   return (
@@ -10,8 +12,6 @@ export default function AnalysisPage() {
       <SiteNav />
 
       <main className="max-w-5xl mx-auto px-5 sm:px-8 py-10">
-        
-        {/* Header */}
         <h1 className="text-2xl sm:text-4xl font-bold mb-6">
           Gambella Refugee & Population Dynamics
         </h1>
@@ -21,17 +21,14 @@ export default function AnalysisPage() {
           trends over time, along with key structural impacts on governance and society.
         </p>
 
-        {/* Trend + Mind Map */}
         <section className="space-y-10 mb-12">
           <RefugeeTrendChart />
           <RefugeeMindMap />
-
           <p className="text-xs text-slate-500">
-            Note: Data is illustrative and used for analytical modeling purposes.
+            Note: Data may include modeled values when live source data is incomplete or unavailable.
           </p>
         </section>
 
-        {/* Zone Breakdown */}
         <section className="mt-10">
           <h2 className="text-xl sm:text-2xl font-bold mb-4">
             Zone-level breakdown
@@ -44,7 +41,6 @@ export default function AnalysisPage() {
 
           <ZoneBreakdownChart />
 
-          {/* Zone Summary Cards */}
           <div className="grid sm:grid-cols-3 gap-4 mt-8">
             <div className="rounded-2xl border border-slate-200 bg-white p-5">
               <div className="text-sm text-slate-500">Anywaa Zone</div>
@@ -69,6 +65,24 @@ export default function AnalysisPage() {
           </div>
         </section>
 
+        <section className="mt-12">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4">Analysis articles</h2>
+          <div className="grid gap-4">
+            {analysisPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/analysis/${post.slug}`}
+                className="panel-card block p-5 transition hover:shadow-md"
+              >
+                <div className="text-xs text-slate-500">
+                  {post.category} · {post.date}
+                </div>
+                <h3 className="text-lg font-bold mt-1">{post.title}</h3>
+                <p className="text-sm text-slate-600 mt-2">{post.excerpt}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
