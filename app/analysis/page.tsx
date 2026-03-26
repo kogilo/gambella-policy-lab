@@ -1,3 +1,6 @@
+'use client'
+
+import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import RefugeeTrendChart from '@/components/RefugeeTrendChart'
 import RefugeeMindMap from '@/components/RefugeeMindMap'
@@ -5,8 +8,31 @@ import ZoneBreakdownChart from '@/components/ZoneBreakdownChart'
 import SiteNav from '@/components/SiteNav'
 import SiteFooter from '@/components/SiteFooter'
 import { analysisPosts } from '@/lib/analysisPosts'
+import { refugeeData as fallbackRefugeeData } from '@/lib/refugeeData'
 
 export default function AnalysisPage() {
+  const trendData = fallbackRefugeeData
+  const [activeCategory, setActiveCategory] = useState('All')
+
+  const categories = useMemo(() => {
+    const uniqueCategories = Array.from(new Set(analysisPosts.map((post) => post.category)))
+    return ['All', ...uniqueCategories]
+  }, [])
+
+  const filteredPosts = useMemo(() => {
+    if (activeCategory === 'All') return analysisPosts
+    return analysisPosts.filter((post) => post.category === activeCategory)
+  }, [activeCategory])
+
+  const featuredPost =
+    activeCategory === 'All'
+      ? filteredPosts.find((post) => post.featured)
+      : undefined
+
+  const regularPosts = featuredPost
+    ? filteredPosts.filter((post) => post.slug !== featuredPost.slug)
+    : filteredPosts
+
   return (
     <div className="site-shell min-h-screen">
       <SiteNav />
@@ -22,7 +48,7 @@ export default function AnalysisPage() {
         </p>
 
         <section className="space-y-10 mb-12">
-          <RefugeeTrendChart />
+          <RefugeeTrendChart data={trendData} />
           <RefugeeMindMap />
           <p className="text-xs text-slate-500">
             Note: Data may include modeled values when live source data is incomplete or unavailable.
@@ -65,19 +91,90 @@ export default function AnalysisPage() {
           </div>
         </section>
 
-        <section className="mt-12">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4">Analysis articles</h2>
+        <section className="mt-14">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold">Analysis Articles</h2>
+            <span className="text-xs text-slate-500">
+              Governance · Security · Public Services
+            </span>
+          </div>
+
+          <div className="flex flex-wrap gap-2 mb-6">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                  activeCategory === category
+                    ? 'bg-green-800 text-white'
+                    : 'bg-white border border-slate-200 text-slate-600 hover:border-slate-400 hover:text-slate-900'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
+          {featuredPost && (
+            <Link
+              href={`/analysis/${featuredPost.slug}`}
+              className="block rounded-3xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm hover:shadow-md transition mb-6"
+            >
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                <span className="rounded-full bg-green-100 px-3 py-1 text-[11px] font-semibold text-green-800">
+                  Featured
+                </span>
+                <span className="text-xs text-slate-500">
+                  {featuredPost.category} · {featuredPost.date}
+                </span>
+                {featuredPost.readingTime && (
+                  <span className="text-xs text-slate-500">
+                    · {featuredPost.readingTime}
+                  </span>
+                )}
+              </div>
+
+              {featuredPost.framework && (
+                <span className="text-xs text-green-700 font-semibold">
+                  {featuredPost.framework}
+                </span>
+              )}
+
+              <h3 className="text-2xl font-bold mt-2">{featuredPost.title}</h3>
+              <p className="text-sm text-slate-600 mt-3 leading-relaxed">
+                {featuredPost.excerpt}
+              </p>
+            </Link>
+          )}
+
           <div className="grid gap-4">
-            {analysisPosts.map((post) => (
+            {regularPosts.map((post) => (
               <Link
                 key={post.slug}
                 href={`/analysis/${post.slug}`}
                 className="panel-card block p-5 transition hover:shadow-md"
               >
-                <div className="text-xs text-slate-500">
-                  {post.category} · {post.date}
+                <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500">
+                  <span>{post.category}</span>
+                  <span>·</span>
+                  <span>{post.date}</span>
+                  {post.readingTime && (
+                    <>
+                      <span>·</span>
+                      <span>{post.readingTime}</span>
+                    </>
+                  )}
                 </div>
-                <h3 className="text-lg font-bold mt-1">{post.title}</h3>
+
+                {post.framework && (
+                  <div className="mt-2">
+                    <span className="text-xs text-green-700 font-semibold">
+                      {post.framework}
+                    </span>
+                  </div>
+                )}
+
+                <h3 className="text-lg font-bold mt-2">{post.title}</h3>
                 <p className="text-sm text-slate-600 mt-2">{post.excerpt}</p>
               </Link>
             ))}

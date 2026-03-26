@@ -28,7 +28,14 @@ export default async function AnalysisArticlePage({
       <main className="max-w-3xl mx-auto px-5 sm:px-8 py-10">
         <div className="text-xs text-slate-500">
           {post.category} · {post.date}
+          {post.readingTime ? ` · ${post.readingTime}` : ''}
         </div>
+
+        {post.framework && (
+          <span className="text-xs text-green-700 font-semibold">
+            {post.framework}
+          </span>
+        )}
 
         <h1 className="text-3xl sm:text-5xl font-bold mt-2">
           {post.title}

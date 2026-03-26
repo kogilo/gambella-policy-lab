@@ -50,7 +50,7 @@ export default function RefugeeTrendChart({ data }: RefugeeTrendChartProps) {
     ],
   }
 
-  const options: any = {
+  const options = {
     responsive: true,
     plugins: {
       legend: { position: 'top' as const },
