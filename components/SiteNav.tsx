@@ -16,6 +16,7 @@ const allLinks = [
   { href: '/comparateur', label: 'Comparator' },
   { href: '/methodologie', label: 'Methodology' },
   { href: '/analysis', label: 'Analysis' },
+  { href: '/timeline', label: 'Timeline' },
   { href: '/contact', label: 'Contact' },
   { href: '/faq', label: 'FAQ' },
   { href: '/a-propos', label: 'About' },

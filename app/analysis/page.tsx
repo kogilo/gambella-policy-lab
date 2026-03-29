@@ -9,6 +9,7 @@ import SiteNav from '@/components/SiteNav'
 import SiteFooter from '@/components/SiteFooter'
 import { analysisPosts } from '@/lib/analysisPosts'
 import { refugeeData as fallbackRefugeeData } from '@/lib/refugeeData'
+import GambellaTimeline from '@/components/GambellaTimeline'
 
 export default function AnalysisPage() {
   const trendData = fallbackRefugeeData
@@ -66,6 +67,7 @@ export default function AnalysisPage() {
           </p>
 
           <ZoneBreakdownChart />
+          <GambellaTimeline />
 
           <div className="grid sm:grid-cols-3 gap-4 mt-8">
             <div className="rounded-2xl border border-slate-200 bg-white p-5">
