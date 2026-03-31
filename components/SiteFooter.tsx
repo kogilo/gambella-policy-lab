@@ -92,12 +92,12 @@ export default function SiteFooter() {
               LinkedIn
             </a>
             <a
-              href="https://github.com/kogilo"
+              href="https://x.com/AbelOthow"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-slate-900 transition"
             >
-              GitHub
+              X (Twitter)
             </a>
           </div>
         </div>

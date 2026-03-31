@@ -1,0 +1,50 @@
+# Query: Election
+# ContextLines: 1
+
+11 results - 4 files
+
+package-lock.json:
+  1  {
+  2:   "name": "Gambella Policy Lab",
+  3    "version": "1.0.0",
+
+  7      "": {
+  8:       "name": "Gambella Policy Lab",
+  9        "version": "1.0.0",
+
+package.json:
+  1  {
+  2:   "name": "Gambella Policy Lab",
+  3    "version": "1.0.0",
+
+app\globals.css:
+  312  
+  313: /* ---- SGambella Policy Lab ---- */
+  314  
+  315: ::sGambella Policy Lab {
+  316    background: var(--accent);
+
+app\layout.tsx:
+  35    creator: "Your Name",
+  36:   publisher: "Gambella Policy Lab",
+  37    openGraph: {
+
+  41      url: "https://gambella-policy-lab.vercel.app",
+  42:     siteName: "Gambella Policy Lab",
+  43      locale: "en_US",
+
+  49          height: 816,
+  50:         alt: "Gambella Policy Lab — AI-Powered Program Analysis",
+  51        },
+
+  55      card: "summary_large_image",
+  56:     title: "Gambella Policy Lab — AI-Powered Program Analysis",
+  57      description:
+
+  85      "@type": "WebSite",
+  86:     name: "Gambella Policy Lab",
+  87      url: "https://gambella-policy-lab.vercel.app",
+
+  96        "@type": "Organization",
+  97:       name: "Gambella Policy Lab",
+  98        url: "https://gambella-policy-lab.vercel.app",

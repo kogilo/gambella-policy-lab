@@ -14,6 +14,28 @@ export const gambellaTimeline = [
     category: 'Politics',
   },
   {
+  year: '1998',
+  title: 'Relocation of Refugees from Dimma',
+  description:
+    'Refugees from Dimma refugee camp were relocated into Gambella region by the federal government. Local communities argue that this process took place without sufficient consultation with residents and contributed to later tensions over land, administration, and political representation.',
+  category: 'Refugees',
+},
+
+{
+  year: '1999',
+  title: 'Settlement Expansion Around Gambella Town',
+  description:
+    'Temporary settlement arrangements expanded around Gambella town. Some refugee students were enrolled in Gambella High School and Gambella Teachers Education College while many of their families remained in refugee camps. Some were later employed in government sectors, and settlement areas were established in what is now known as "Newland." Local accounts also state that individuals who opposed the policy were arrested, including senior regional education officials.',
+  category: 'Humanitarian',
+},
+{
+  year: '2001',
+  title: 'Formation of Nuer Zone Administration',
+  description:
+    'The administrative zone now known as Nuer Zone became more formally established. Critics argue that refugee settlement patterns, demographic shifts, and federal intervention contributed to changes in the regional balance of power.',
+  category: 'Politics',
+},
+  {
     year: '2003',
     title: 'December 13 Gambella Massacre',
     description:
